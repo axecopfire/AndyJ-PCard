@@ -1,0 +1,171 @@
+body {
+    text-align: center;
+    background: linear-gradient(#ecf0f1, #95a5a6, #1abc9c, #ecf0f1);
+    background-size: 800% 800%;
+    -webkit-animation: SkyColorChange 20s ease alternate infinite;
+    -moz-animation: SkyColorChange 20s ease alternate infinite;
+    animation: SkyColorChange 20s ease alternate infinite;
+}
+
+h1 {
+    font-family: 'Frijole', cursive;
+    border-bottom: thick;
+    font-size: 50px;
+    text-shadow: 2px 2px #ff0000;
+}
+
+h4 {
+    color: #ecf0f1;
+    font-size: 30px;
+    font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+h6 {
+    color: white;
+}
+
+p {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+img {
+    padding: 10px;
+    padding-bottom: 50px;
+    border-radius: 30%;
+}
+
+a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+/*// MIDDLE LAYER //*/
+
+#first-impression {
+    border-width: thick;
+    border-style: solid;
+    max-width: 600px;
+    max-height: 600px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 30px 20px 0 rgba(0, 0, 0, 1);
+    border-radius: 0 0 40% 40%;
+    background: linear-gradient(#D834FF, #d81919, #e08903, #2B3994, #D834FF);
+    background-size: 800% 800%;
+    -webkit-animation: SkyColorChange 20s ease alternate infinite;
+    -moz-animation: SkyColorChange 20s ease alternate infinite;
+    animation: SkyColorChange 20s ease alternate infinite;
+}
+
+#box {
+    display: flex;
+    text-align: left;
+    border: solid 5px black;
+}
+
+
+/*// TOP LAYER //*/
+
+.flying {
+    position: relative;
+    outline: 0;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: yellow;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    font-family: 'Permanent Marker', cursive;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 1);
+}
+
+#left-Links {
+    display: flex;
+    flex-direction: column;
+    align-item: baseline;
+    max-width: 100px;
+    height: 350px;
+    justify-content: space-between;
+    margin: auto;
+    transform: translateX(-300px) translateY(-550px);
+}
+
+#profile {
+    transform-origin: 10px 10px;
+    animation: drop 3s ease-out forwards, swing 3s 3.1s ease forwards;
+}
+
+
+/*// ANIMATIONS //*/
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(100px) translateY(500px);
+    }
+    100% {
+        transform: translateX(400px) translateY(200px);
+        opacity 1;
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: translateX(400px) translateY(200px) rotateZ(0deg)
+    }
+    40% {
+        transform: translateX(400px) translateY(200px) rotateZ(90deg)
+    }
+    70% {
+        transform: translateX(400px) translateY(200px) rotateZ(70deg)
+    }
+    100% {
+        transform: translateX(400px) translateY(200px) rotateZ(85deg)
+    }
+}
+
+
+/*// BACKGROUND COLOR CHANGES //*/
+
+@-webkit-keyframes SkyColorChange {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@-moz-keyframes SkyColorChange {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@keyframes SkyColorChange {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
